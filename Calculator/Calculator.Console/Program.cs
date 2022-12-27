@@ -10,7 +10,6 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            
             FirstStep firstStep = new FirstStep();
             firstStep.EnterOp();
             Console.ReadLine();

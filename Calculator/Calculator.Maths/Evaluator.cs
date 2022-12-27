@@ -26,6 +26,18 @@ namespace Calculator.Maths
             return EvaluateStacks();
         }
 
+        // Präzedenz
+        // + = 1
+        // - = 1
+        // * = 2
+        // / = 2
+        // ^ = 3
+        // Dictionary
+
+        // o o o o o      X
+        // 1 1 2 1 2      1
+        //        ^
+
         private void PutExpressionIntoStacks(string expression)
         {
             string x = "";      // Enterd Number as string
