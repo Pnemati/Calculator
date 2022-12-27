@@ -25,7 +25,6 @@ namespace Calc_1
         double y;
         double val1;   // Operant 
         double val2;
-        string op;     // Operator
         Stack<double> NumberStack;   // Save Operants
         Stack<string> OperStack;     // Save Operators
         Stack<string> AllEnterd;
@@ -67,7 +66,7 @@ namespace Calc_1
         {
             x = "";
             Button w = (Button)sender;
-            op = w.Content.ToString();
+            var op = w.Content.ToString();
 
             //if (OperStack.Count() != 0 && OperStack.Peek() == "Sin")
             //{
@@ -120,7 +119,7 @@ namespace Calc_1
             DisplayTB.Text += " = ";              // Evalute Plus and Minus
             while (OperStack.Peek() != "")
             {
-                op = OperStack.Pop();
+                var op = OperStack.Pop();
                 val2 = NumberStack.Pop();
                 val1 = NumberStack.Pop();
                 EvaluateC.Eval(val1, val2, op, ref y);
@@ -131,7 +130,6 @@ namespace Calc_1
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-            op = null;
             x = null;
             xx = 0;
             y = 0;

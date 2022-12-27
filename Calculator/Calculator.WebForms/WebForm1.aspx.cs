@@ -10,23 +10,30 @@ namespace WebApplicationCalc
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-            string x;      // Enterd Number as string
-            double xx = 0;     // Convert x to double
-            double y;
-            double val1;   // Operant 
-            double val2;
-            string op;     // Operator
-            Stack<double> NumberStack = new Stack<double>();   // Save Operants
-            Stack<string> OperStack = new Stack<string>();     // Save Operators
-            Stack<string> AllEnterd = new Stack<string>();
-            EvaluateClass EvaluateC = new EvaluateClass();     // Evaluation
+
+        string x;           // Enterd Number as string
+        double xx = 0;      // Convert x to double
+        double y;
+        double val1;        // Operant 
+        double val2;
+        string op;          // Operator
+        Stack<double> NumberStack = new Stack<double>();   // Save Operants
+        Stack<string> OperStack = new Stack<string>();     // Save Operators
+        Stack<string> AllEnterd = new Stack<string>();
+        EvaluateClass EvaluateC = new EvaluateClass();     // Evaluation
 
 
         public WebForm1()
         {
-            OperStack.Push("");           
-            AllEnterd.Push("");            
+            OperStack.Push("");
+            AllEnterd.Push("");
         }
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
         protected void Number_Click(object sender, EventArgs e)
         {
             Button w = (Button)sender;
@@ -125,5 +132,34 @@ namespace WebApplicationCalc
             OperStack.Push("");
             AllEnterd.Push("");
         }
+        //[System.ComponentModel.Browsable(false)]
+        //public new bool IsPostBack { get; }
+
+        //protected override void OnPreInit(EventArgs e)
+        //{
+        //    base.OnPreInit(e);
+        //}
+
+        //protected void Page_PreInit(object sender, EventArgs e)
+        //{
+        //    bool isPostBack = Page.IsPostBack;
+        //}
+
+        //protected void Page_Init(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //protected void Page_InitComplete(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //protected void Page_Preload(object sender, EventArgs e)
+        //{
+
+        //}
+
+
     }
 }

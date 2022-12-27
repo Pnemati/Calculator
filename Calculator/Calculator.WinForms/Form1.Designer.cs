@@ -34,11 +34,11 @@
             this.B_1 = new System.Windows.Forms.Button();
             this.B_3 = new System.Windows.Forms.Button();
             this.B_2 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.PlusB = new System.Windows.Forms.Button();
             this.B_4 = new System.Windows.Forms.Button();
             this.B_6 = new System.Windows.Forms.Button();
             this.B_5 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.MinusB = new System.Windows.Forms.Button();
             this.B_7 = new System.Windows.Forms.Button();
             this.B_9 = new System.Windows.Forms.Button();
             this.B_8 = new System.Windows.Forms.Button();
@@ -130,18 +130,18 @@
             this.B_2.UseVisualStyleBackColor = true;
             this.B_2.Click += new System.EventHandler(this.NumbersClick);
             // 
-            // button8
+            // PlusB
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button8.FlatAppearance.BorderSize = 2;
-            this.button8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(178, 270);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(50, 50);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "+";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.OperatorClick);
+            this.PlusB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.PlusB.FlatAppearance.BorderSize = 2;
+            this.PlusB.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlusB.Location = new System.Drawing.Point(178, 270);
+            this.PlusB.Name = "PlusB";
+            this.PlusB.Size = new System.Drawing.Size(50, 50);
+            this.PlusB.TabIndex = 0;
+            this.PlusB.Text = "+";
+            this.PlusB.UseVisualStyleBackColor = false;
+            this.PlusB.Click += new System.EventHandler(this.OperatorClick);
             // 
             // B_4
             // 
@@ -179,18 +179,18 @@
             this.B_5.UseVisualStyleBackColor = true;
             this.B_5.Click += new System.EventHandler(this.NumbersClick);
             // 
-            // button12
+            // MinusB
             // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button12.FlatAppearance.BorderSize = 2;
-            this.button12.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(178, 214);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(50, 50);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "-";
-            this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.OperatorClick);
+            this.MinusB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.MinusB.FlatAppearance.BorderSize = 2;
+            this.MinusB.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinusB.Location = new System.Drawing.Point(178, 214);
+            this.MinusB.Name = "MinusB";
+            this.MinusB.Size = new System.Drawing.Size(50, 50);
+            this.MinusB.TabIndex = 0;
+            this.MinusB.Text = "-";
+            this.MinusB.UseVisualStyleBackColor = false;
+            this.MinusB.Click += new System.EventHandler(this.OperatorClick);
             // 
             // B_7
             // 
@@ -393,9 +393,9 @@
             this.Controls.Add(this.DisplayTB);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button16);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.MinusB);
             this.Controls.Add(this.button35);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.PlusB);
             this.Controls.Add(this.cParenthesesB);
             this.Controls.Add(this.B_8);
             this.Controls.Add(this.B_5);
@@ -435,11 +435,11 @@
         private System.Windows.Forms.Button B_1;
         private System.Windows.Forms.Button B_3;
         private System.Windows.Forms.Button B_2;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button PlusB;
         private System.Windows.Forms.Button B_4;
         private System.Windows.Forms.Button B_6;
         private System.Windows.Forms.Button B_5;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button MinusB;
         private System.Windows.Forms.Button B_7;
         private System.Windows.Forms.Button B_9;
         private System.Windows.Forms.Button B_8;
